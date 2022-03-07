@@ -1,0 +1,41 @@
+#btn {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background: none;
+
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  span#hamburguer {
+    border-top: 3px solid;
+    width: 24px;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 3px;
+
+      background: currentColor;
+      margin-top: 4px;
+
+      transition: 0.3s;
+      position: relative;
+    }
+  }
+
+  &.active span#hamburguer {
+    border-top-color: transparent;
+
+    &::before {
+      transform: rotate(135deg);
+    }
+    &::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+}

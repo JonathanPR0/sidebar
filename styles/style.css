@@ -1,0 +1,234 @@
+#btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1rem;
+  background: none;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#btn span#hamburguer {
+  border-top: 3px solid;
+  width: 24px;
+}
+
+#btn span#hamburguer::after, #btn span#hamburguer::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: currentColor;
+  margin-top: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+#btn.active span#hamburguer {
+  border-top-color: transparent;
+}
+
+#btn.active span#hamburguer::before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+#btn.active span#hamburguer::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  top: -7px;
+}
+
+aside#sidebar.active {
+  width: 240px;
+}
+
+aside#sidebar.active nav div#menu img.icon {
+  opacity: 1;
+  display: inline-block;
+}
+
+aside#sidebar.active nav ul li.options a {
+  opacity: 1;
+}
+
+aside#sidebar.active div#logout div#logout-info div {
+  opacity: 1;
+}
+
+aside#sidebar.active div#logout img.icon {
+  opacity: 1;
+}
+
+main#content.sidebar-closed {
+  left: 250px;
+}
+
+main#content.sidebar-closed section {
+  width: calc(100% - 78px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #dce4e3;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 78px;
+  height: 100%;
+  padding: 18px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main section {
+  width: calc(100% - 250px);
+}
+
+aside#sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 78px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #18c29c;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+aside#sidebar nav {
+  padding: 24px 12px;
+}
+
+aside#sidebar nav div#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+aside#sidebar nav div#menu img {
+  display: none;
+  opacity: 0;
+  margin-left: 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+aside#sidebar nav ul li.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 12px;
+  list-style: none;
+}
+
+aside#sidebar nav ul li.options a {
+  opacity: 0;
+  font-size: 15px;
+  margin-left: 12px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+aside#sidebar nav ul li.options.active {
+  background-color: #8ed7c6;
+}
+
+aside#sidebar div#logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 14px;
+  background-color: #8ed7c6;
+}
+
+aside#sidebar div#logout div#logout-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside#sidebar div#logout div#logout-info div {
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+aside#sidebar div#logout div#logout-info div h2 {
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+aside#sidebar div#logout div#logout-info div p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+aside#sidebar div#logout img.perfil {
+  height: 45px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+aside#sidebar div#logout img.icon {
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+img.icon {
+  height: 24px;
+}
+/*# sourceMappingURL=style.css.map */

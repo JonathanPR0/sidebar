@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Sidebar</title>
+</head>
+
+<body>
+  <main id="content">
+    <aside id="sidebar">
+      <nav>
+        <div id="menu">
+          <img src="./public/logo.svg" alt="VET." class="icon">
+          <button id="btn">
+            <span id="hamburguer"></span>
+          </button>
+        </div>
+        <ul>
+          <li class="active options">
+            <img src="./public/search.svg" alt="Lupa" class="icon">
+            <a>Buscar</a>
+          </li>
+          <li class="options">
+            <img src="./public/grid.svg" alt="Dashboard" class="icon">
+            <a>Dashboard</a>
+          </li>
+          <li class="options">
+            <img src="./public/pet.svg" alt="Pets" class="icon">
+            <a>Pets</a>
+          </li>
+          <li class="options">
+            <img src="./public/user.svg" alt="Clientes" class="icon">
+            <a>Clientes</a>
+          </li>
+          <li class="options">
+            <img src="./public/vet.svg" alt="Vets" class="icon">
+            <a>Vets</a>
+          </li>
+          <li class="options">
+            <img src="./public/settings.svg" alt="Ajustes" class="icon">
+            <a>Ajustes</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="logout">
+        <div id="logout-info">
+          <img src="./public/photo.png" alt="Perfil" class="perfil">
+          <div>
+            <h2>Jonathan A</h2>
+            <p>Convidado</p>
+          </div>
+        </div>
+        <img src="./public/log-out.svg" alt="log-out" class="icon">
+      </div>
+    </aside>
+    <section class="sidebar-closed">
+      <h1>Dashboard</h1>
+    </section>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+aside#sidebar.active {
+  width: 240px;
+
+  nav {
+    div#menu img.icon {
+      opacity: 1;
+      display: inline-block;
+    }
+    ul li.options a {
+      opacity: 1;
+    }
+  }
+  div#logout {
+    div#logout-info div {
+      opacity: 1;
+    }
+    img.icon {
+      opacity: 1;
+    }
+  }
+}
+main#content.sidebar-closed {
+  left: 250px;
+
+  section {
+    width: calc(100% - 78px);
+  }
+}
